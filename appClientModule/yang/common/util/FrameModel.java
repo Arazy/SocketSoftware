@@ -1,8 +1,9 @@
-package yang.util;
+package yang.common.util;
 
 import java.awt.EventQueue;
 
-import yang.Frame;
+import yang.frames.Frame;
+
 
 /**
  * 用于对socket通讯后的操作

@@ -1,4 +1,4 @@
-package yang.util;
+package yang.common.util;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

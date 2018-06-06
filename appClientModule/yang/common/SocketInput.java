@@ -1,8 +1,8 @@
-package yang;
+package yang.common;
 
 import java.net.*;
 
-import yang.util.Model;
+import yang.common.util.Model;
 
 import java.io.*;
 

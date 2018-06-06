@@ -1,11 +1,13 @@
-package yang;
+package yang.frames;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import yang.util.FrameModel;
-import yang.util.Model;
+import yang.common.SocketInput;
+import yang.common.SocketOutput;
+import yang.common.util.FrameModel;
+import yang.common.util.Model;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;

@@ -1,6 +1,6 @@
 import java.awt.EventQueue;
 
-import yang.Frame;
+import yang.frames.Frame;
 
 /**
  * Èë¿Ú
