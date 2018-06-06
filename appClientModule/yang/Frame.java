@@ -17,7 +17,7 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 
-public class Test extends JFrame {
+public class Frame extends JFrame {
 
 	private int port = 8189;
 	private SocketOutput output;
@@ -37,7 +37,7 @@ public class Test extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Test() {
+	public Frame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 332, 684);
 		contentPane = new JPanel();

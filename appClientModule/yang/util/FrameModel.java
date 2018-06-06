@@ -2,22 +2,22 @@ package yang.util;
 
 import java.awt.EventQueue;
 
-import yang.Test;
+import yang.Frame;
 
 /**
  * 用于对socket通讯后的操作
  * @author yxl
  *
  */
-public class TextModel extends Model {
+public class FrameModel extends Model {
 	
 	@Override
 	public void inHandle(){
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Test.textArea.append(getName() + "	" + getDate() + "\n");
-					Test.textArea.append(getContent() + "\n");
+					Frame.textArea.append(getName() + "	" + getDate() + "\n");
+					Frame.textArea.append(getContent() + "\n");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -30,8 +30,8 @@ public class TextModel extends Model {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Test.textArea.append(getName() + "	" + getDate() + "\n");
-					Test.textArea.append(getContent() + "\n");
+					Frame.textArea.append(getName() + "	" + getDate() + "\n");
+					Frame.textArea.append(getContent() + "\n");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
