@@ -1,6 +1,6 @@
 import java.awt.EventQueue;
 
-import yang.Test;
+import yang.Frame;
 
 /**
  * Èë¿Ú
@@ -14,7 +14,7 @@ public class Main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Test frame = new Test();
+					Frame frame = new Frame();
 					frame.setSize(350, 550);
 					frame.setResizable(false);
 					frame.setVisible(true);

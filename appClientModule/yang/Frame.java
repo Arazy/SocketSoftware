@@ -4,8 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import yang.util.FrameModel;
 import yang.util.Model;
-import yang.util.TextModel;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -21,7 +21,7 @@ public class Frame extends JFrame {
 
 	private int port = 8189;
 	private SocketOutput output;
-	private SocketInput<TextModel> input;
+	private SocketInput<FrameModel> input;
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
@@ -96,7 +96,7 @@ public class Frame extends JFrame {
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				if (null == input) {
-					input = new SocketInput<TextModel>(Integer.valueOf(textField_3.getText()));
+					input = new SocketInput<FrameModel>(Integer.valueOf(textField_3.getText()));
 					input.start();
 					button.setText("关闭服务");
 					button_1.setEnabled(true);
@@ -107,7 +107,7 @@ public class Frame extends JFrame {
 						button.setText("开启服务");
 						button_1.setEnabled(false);
 					} else {
-						input = new SocketInput<TextModel>(port);
+						input = new SocketInput<FrameModel>(port);
 						input.start();
 						button.setText("关闭服务");
 						button_1.setEnabled(true);
@@ -118,7 +118,7 @@ public class Frame extends JFrame {
 			}
 		});
 
-		Model model = new TextModel();
+		Model model = new FrameModel();
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				model.setName(textField_1.getText());
